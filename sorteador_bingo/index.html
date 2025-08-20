@@ -3,30 +3,47 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Bingo</title>
+    <title>Sorteador Bingo</title>
     <link rel="icon" href="./midia/favicon.png" type="image/png"/>
     <link rel="stylesheet" href="./style.css"/>
     <script src="./script.js"></script>
 </head>
 <body>
     <main>
+        <!-- Registro de números sorteados -->
         <section>
-            <h2 class="subtitulo1">Registro de números sorteados</h2>
+            <h2 class="subtitulo1">Números sorteados</h2>
             <table>
-                <tr>
-                    <th><img src="./midia/letraB.png" alt="Letra B"/></th>
-                    <th><img src="./midia/letraI.png" alt="Letra I"/></th>
-                    <th><img src="./midia/letraN.png" alt="Letra N"/></th>
-                    <th><img src="./midia/letraG.png" alt="Letra G"/></th>
-                    <th><img src="./midia/letraO.png" alt="Letra O"/></th>
-                </tr>
+                <thead>
+                    <tr>
+                        <th><img src="./midia/letraB.png" alt="Letra B"/></th>
+                        <th><img src="./midia/letraI.png" alt="Letra I"/></th>
+                        <th><img src="./midia/letraN.png" alt="Letra N"/></th>
+                        <th><img src="./midia/letraG.png" alt="Letra G"/></th>
+                        <th><img src="./midia/letraO.png" alt="Letra O"/></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Números sorteados irão aparecer aqui -->
+                </tbody>
             </table>
         </section>
+
+        <!-- Botão para sortear os números e número da vez -->
         <aside>
             <h2>Sortear números</h2>
-            <p class="sorteado">B0</p>
-            <button class="btnSortear">Sortear</button>
+            <div class="conteudo">
+                <div class="resultadoSorteio">
+                    <p id="letraSorteada" class="odometer">-</p>
+                    <p id="numSorteado" class="odometer">-</p>
+                </div>
+                <button class="btnSortear" onclick="sortear()">Sortear</button>
+            </div>
         </aside>
     </main>
+
+    <footer>
+        <p>Rayssa Chaves. 2DSTB - DS17.</p>
+    </footer>
 </body>
 </html>
