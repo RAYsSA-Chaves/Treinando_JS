@@ -13,13 +13,28 @@ body {
     flex-direction: column;
 }
 
+/* Conteúdo principal */
 main {
-    flex: 1;
+    flex: 1;  /* o elemento irá ocupar todo o espaço possível, dividindo-o com os outros elementos */
     display: flex;
-    align-items: center;
     justify-content: center;
     margin: 0 auto;
-    gap: 10rem;
+    gap: 10%;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background-color: white;
+    align-items: center;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+header img {
+    width: 40px;
+    height: auto;
 }
 
 /* Tabela */
@@ -31,12 +46,10 @@ table th img {
 table {
     width: 100%;
     table-layout: fixed;
-    border-collapse: separate;
     border-spacing: 20px;
 }
 
-td {
-    width: 10px;
+td:not(:empty) {
     height: 90px;
     text-align: center;
     border-radius: 10px;
@@ -50,13 +63,13 @@ td {
 section, aside {
     border-radius: 5px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-    padding: 10px;
 }
 
 section {
-    min-height: 210px;
+    height: fit-content;
     max-width: 50%;
     margin: 4rem 0;
+    padding: 10px 10px 10px 0;
 }
 
 .subtitulo1 {
@@ -66,13 +79,14 @@ section {
 
 /* Sorteador */
 aside {
-    justify-content: center;
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 25%;
+    min-width: 300px; 
     max-height: fit-content;
     background-color: #fff;
+    margin-top: 4rem;
 }
 
 .btnSortear {

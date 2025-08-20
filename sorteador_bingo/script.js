@@ -8,7 +8,7 @@ function sortear() {
     if (sorteados.length >= 75) {
         document.getElementById("letraSorteada").innerText = "F";
         document.getElementById("numSorteado").innerText = "IM";
-        return;
+        return;  // encerra a função
     }
 
     let letra, num

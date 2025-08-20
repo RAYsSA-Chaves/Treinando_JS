@@ -9,6 +9,13 @@
     <script src="./script.js"></script>
 </head>
 <body>
+    <!-- Cabeçalho -->
+    <header>
+        <img src="./midia/favicon.png" alt="Letra B"/>
+        <h1>Sorteador para Bingo</h1>
+    </header>
+
+    <!-- Conteúdo principal -->
     <main>
         <!-- Registro de números sorteados -->
         <section>
@@ -29,19 +36,20 @@
             </table>
         </section>
 
-        <!-- Botão para sortear os números e número da vez -->
+        <!-- Sortear os números -->
         <aside>
             <h2>Sortear números</h2>
             <div class="conteudo">
                 <div class="resultadoSorteio">
-                    <p id="letraSorteada" class="odometer">-</p>
-                    <p id="numSorteado" class="odometer">-</p>
+                    <p id="letraSorteada">-</p>
+                    <p id="numSorteado">-</p>
                 </div>
                 <button class="btnSortear" onclick="sortear()">Sortear</button>
             </div>
         </aside>
     </main>
 
+    <!-- Rodapé -->
     <footer>
         <p>Rayssa Chaves. 2DSTB - DS17.</p>
     </footer>
