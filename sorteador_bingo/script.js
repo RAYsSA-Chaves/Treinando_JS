@@ -1,6 +1,6 @@
 let sorteados = [];
 
-// opções de letras
+// Opções de letras
 let letras = ["B", "I", "N", "G", "O"];
 
 function sortear() {
@@ -49,7 +49,7 @@ function sortear() {
     addTabela(letra, num);
 }
 
-// Adiicionar o número na célula correta da tabela
+// Adicionar o número na célula correta da tabela
 function addTabela(letra, num){ 
     let tabela = document.querySelector("table").tBodies[0];
     // Descobrir o index da coluna
